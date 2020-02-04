@@ -1,0 +1,53 @@
+<h1>New Employee</h1>
+<%= form_with scope: :employee, url: employees_path, local: true do |form| %>
+  
+<div class="container">
+  <div class="row">
+    <div class= "col">
+      <p>
+        <%= form.label :Name %><br>
+        <%= form.text_field :name %>
+      </p>
+      <p>
+        <%= form.label :phone_number, 'Phone Number' %><br>
+        <%= form.telephone_field :phone_number %>
+      </p>
+      <p>
+        <%= form.label :Address %><br>
+        <%= form.text_field :address %>
+      </p>
+      <p>
+        <%= form.label :ems_number, 'EMS Number' %><br>
+        <%= form.text_field :ems_number %>
+      </p>
+    </div> 
+    <div class="col">
+      <p>
+        <%= form.label :ems_level, 'EMS Level' %><br>
+        <%= form.select :ems_level, ['', 'Basic', 'Advanced', 'Paramedic']%>
+      </p>
+      <p>
+        <%= form.label :emergency_contact_name, 'Emergency Contact' %><br>
+        <%= form.text_field :emergency_contact_name %>
+      </p>
+      <p>
+        <%= form.label :emergency_contact_number, 'Emergency Contact Number' %><br>
+        <%= form.text_field :emergency_contact_number %>
+      </p>
+      <p>
+        <%= form.label :Email %><br>
+        <%= form.email_field :email %>
+      </p>
+      <p>
+        <%= form.label :hire_date, 'Hire Date' %><br>
+        <%= form.date_field :hire_date %>
+      </p>
+    </div>
+  </div>
+</div>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+  <%= link_to 'Back', employees_path, class: "btn btn-sm btn-outline-secondary" %>

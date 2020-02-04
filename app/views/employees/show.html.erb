@@ -1,0 +1,45 @@
+<p>
+  <strong>Name:</strong>
+  <%= @employee.name %>
+</p>
+ 
+<p>
+  <strong>Phone Number:</strong>
+  <%= @employee.phone_number %>
+</p> 
+
+<p>
+  <strong>Address:</strong>
+  <%= @employee.address %>
+</p> 
+
+<p>
+  <strong>EMS Number:</strong>
+  <%= @employee.ems_number %>
+</p> 
+
+<p>
+  <strong>EMS Level:</strong>
+  <%= @employee.ems_level %>
+</p> 
+
+<p>
+  <strong>Emergency Contact Name:</strong>
+  <%= @employee.emergency_contact_name %>
+</p> 
+
+<p>
+  <strong>Emergency Contact Number:</strong>
+  <%= @employee.emergency_contact_number %>
+</p> 
+<p>
+  <strong>Email:</strong>
+  <%= @employee.email %>
+</p> 
+<p>
+  <strong>Hire Date:</strong>
+  <%= @employee.hire_date %>
+</p>
+
+<%= link_to 'Edit', edit_employee_path(@employee), class: "btn btn-sm btn-outline-secondary" %> |
+<%= link_to 'Back', employees_path, class: "btn btn-sm btn-outline-secondary" %>
