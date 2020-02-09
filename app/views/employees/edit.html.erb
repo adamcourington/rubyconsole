@@ -2,6 +2,7 @@
 <%= form_with(model: @employee, local: true) do |form| %>
 
   <div class="container">
+  <%= render 'shared/error_messages' %>
     <div class="row">
       <div class= "col">
         <p>
@@ -18,7 +19,7 @@
         </p>
         <p>
           <%= form.label :ems_level, 'EMS Level' %><br>
-          <%= form.select :ems_level, ['', 'Basic', 'Advanced', 'Paramedic']%>
+          <%= form.select :ems_level, ['', 'N/A', 'Basic', 'Advanced', 'Paramedic']%>
         </p>
         <p>
           <%= form.label :ems_number, 'EMS Number' %><br>

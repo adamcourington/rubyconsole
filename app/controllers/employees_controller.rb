@@ -8,6 +8,7 @@ class EmployeesController < ApplicationController
     end
 
     def new
+        @employee = Employee.new
     end
     
     def edit
@@ -17,8 +18,11 @@ class EmployeesController < ApplicationController
     def create
         @employee = Employee.new(employee_params)
        
-        @employee.save
+      if @employee.save
         redirect_to @employee
+        else
+          render 'new'
+        end
     end
 
     def update
