@@ -1,0 +1,11 @@
+<p>
+  <strong>Run_number:</strong>
+  <%= @run.run_number %>
+</p>
+ 
+<p>
+  <strong>Date:</strong>
+  <%= @run.date %>
+</p>
+<%= link_to 'Edit', edit_run_path(@run), class: "btn btn-sm btn-outline-secondary" %> |
+<%= link_to 'Back', runs_path, class: "btn btn-sm btn-outline-secondary" %>

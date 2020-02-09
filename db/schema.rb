@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_09_134458) do
+ActiveRecord::Schema.define(version: 2020_02_09_171405) do
 
   create_table "employees", force: :cascade do |t|
     t.string "name"
@@ -25,6 +25,36 @@ ActiveRecord::Schema.define(version: 2020_02_09_134458) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_employees_on_email", unique: true
+  end
+
+  create_table "runs", force: :cascade do |t|
+    t.string "run_number"
+    t.string "date"
+    t.string "station"
+    t.string "time_of_call"
+    t.string "onscene"
+    t.string "inservice"
+    t.string "number"
+    t.string "street1"
+    t.string "street2"
+    t.string "category1"
+    t.string "category2"
+    t.string "info"
+    t.string "shift"
+    t.string "name"
+    t.string "a2591"
+    t.string "a2592"
+    t.string "a2551"
+    t.string "a2552"
+    t.string "a2553"
+    t.string "a2571"
+    t.string "a2572"
+    t.string "a2501"
+    t.string "a2502"
+    t.string "a2503"
+    t.string "a2504"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

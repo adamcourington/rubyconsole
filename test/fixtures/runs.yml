@@ -1,0 +1,55 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  run_number: MyString
+  date: MyString
+  station: MyString
+  time_of_call: MyString
+  onscene: MyString
+  inservice: MyString
+  number: MyString
+  street1: MyString
+  street2: MyString
+  category1: MyString
+  category2: MyString
+  info: MyString
+  shift: MyString
+  name: MyString
+  2591: MyString
+  2592: MyString
+  2551: MyString
+  2552: MyString
+  2553: MyString
+  2571: MyString
+  2572: MyString
+  2501: MyString
+  2502: MyString
+  2503: MyString
+  2504: MyString
+
+two:
+  run_number: MyString
+  date: MyString
+  station: MyString
+  time_of_call: MyString
+  onscene: MyString
+  inservice: MyString
+  number: MyString
+  street1: MyString
+  street2: MyString
+  category1: MyString
+  category2: MyString
+  info: MyString
+  shift: MyString
+  name: MyString
+  2591: MyString
+  2592: MyString
+  2551: MyString
+  2552: MyString
+  2553: MyString
+  2571: MyString
+  2572: MyString
+  2501: MyString
+  2502: MyString
+  2503: MyString
+  2504: MyString
