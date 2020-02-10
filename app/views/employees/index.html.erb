@@ -8,9 +8,13 @@
   </tr>
   <%= link_to 'New Employee', new_employee_path, class: "btn btn-sm btn-outline-secondary" %>
   
+  
   <% @employees.each do |employee| %>
+    
     <tr>
       <td><%= employee.name %></td>
+      <td><%= employee.phone_number %></td>
+
       <td><%= link_to 'Show', employee_path(employee), class: "btn btn-sm btn-outline-secondary" %> | </td>
       
       <td><%= link_to 'Delete', employee_path(employee), class: "btn btn-sm btn-outline-secondary",
