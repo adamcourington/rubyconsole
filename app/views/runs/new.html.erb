@@ -42,7 +42,10 @@
       <div class='col'
         <p>
           <%= form.label :street1, 'Street' %><br>
-          <%= form.text_field :street1 %>
+          <%= form.select :street1, ['', '10th Court', 
+                                        '10th Street',
+                                        '11th Court',
+                                        '11th Street'] %>
         </p>
 
         <p>

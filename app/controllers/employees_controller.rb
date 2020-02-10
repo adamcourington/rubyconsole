@@ -1,6 +1,6 @@
 class EmployeesController < ApplicationController
     def index
-        @employees = Employee.order (:name)
+        @pagy, @employees = pagy(Employee.order (:name))
     end
 
     def show

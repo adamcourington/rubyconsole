@@ -1,12 +1,13 @@
 
 
- 
+ <div>
 <table>
   <tr>
     <h1>Employees</h1>
     <th></th>
   </tr>
   <%= link_to 'New Employee', new_employee_path, class: "btn btn-sm btn-outline-secondary" %>
+  
   <% @employees.each do |employee| %>
     <tr>
       <td><%= employee.name %></td>
@@ -15,6 +16,10 @@
       <td><%= link_to 'Delete', employee_path(employee), class: "btn btn-sm btn-outline-secondary",
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
+    </tr>   
+  <% end %>  
 </table>
+</div>
+
+<%== pagy_bootstrap_nav(@pagy) %>
+  <%== pagy_bootstrap_combo_nav_js(@pagy) %>
