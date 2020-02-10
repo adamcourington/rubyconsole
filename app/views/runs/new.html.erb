@@ -2,7 +2,7 @@
 
 <%= form_with scope: :run, url: runs_path, local: true do |form| %>
     <p>
-      <%= form.label :run_number %><br>
+      <%= form.label :run_number, 'Run Number' %><br>
       <%= form.text_field :run_number %>
     </p>
    
@@ -17,12 +17,12 @@
     </p>
 
     <p>
-      <%= form.label :time_of_call %><br>
+      <%= form.label :time_of_call, 'Time of Call' %><br>
       <%= form.text_field :time_of_call %>
     </p>
 
     <p>
-      <%= form.label :onscene %><br>
+      <%= form.label :onscene, 'On Scene' %><br>
       <%= form.text_field :onscene %>
     </p>
 
@@ -37,27 +37,27 @@
     </p>
 
     <p>
-      <%= form.label :street1 %><br>
+      <%= form.label :street1, 'Street' %><br>
       <%= form.text_field :street1 %>
     </p>
 
     <p>
-      <%= form.label :street2 %><br>
+      <%= form.label :street2, 'Cross Street' %><br>
       <%= form.text_field :street2 %>
     </p>
 
     <p>
-      <%= form.label :category1 %><br>
+      <%= form.label :category1, 'Primary Nature of Call' %><br>
       <%= form.text_field :category1 %>
     </p>
 
     <p>
-      <%= form.label :category2 %><br>
+      <%= form.label :category2, 'Secondary Nature of Call' %><br>
       <%= form.text_field :category2 %>
     </p>
 
     <p>
-      <%= form.label :info %><br>
+      <%= form.label :info, 'Additional Info' %><br>
       <%= form.text_field :info %>
     </p>
 
@@ -108,57 +108,57 @@
     </p>
     
     <p>
-      <%= form.label :a2591 %><br>
+      <%= form.label :a2591, '2591' %><br>
       <%= form.check_box :a2591 %>
     </p>
 
     <p>
-      <%= form.label :a2592 %><br>
+      <%= form.label :a2592, '2592' %><br>
       <%= form.check_box :a2592 %>
     </p>
 
     <p>
-      <%= form.label :a2551 %><br>
+      <%= form.label :a2551, '2551' %><br>
       <%= form.check_box :a2551 %>
     </p>
 
     <p>
-      <%= form.label :a2552 %><br>
+      <%= form.label :a2552, '2552' %><br>
       <%= form.check_box :a2552 %>
     </p>
 
     <p>
-      <%= form.label :a2553 %><br>
+      <%= form.label :a2553, '2553' %><br>
       <%= form.check_box :a2553 %>
     </p>
 
     <p>
-      <%= form.label :a2571 %><br>
+      <%= form.label :a2571, '2571' %><br>
       <%= form.check_box :a2571 %>
     </p>
 
     <p>
-      <%= form.label :a2572 %><br>
+      <%= form.label :a2572, '2572' %><br>
       <%= form.check_box :a2572 %>
     </p>
 
     <p>
-      <%= form.label :a2501 %><br>
+      <%= form.label :a2501, '2501' %><br>
       <%= form.check_box :a2501 %>
     </p>
 
     <p>
-      <%= form.label :a2502 %><br>
+      <%= form.label :a2502, '2502' %><br>
       <%= form.check_box :a2502 %>
     </p>
 
     <p>
-      <%= form.label :a2503 %><br>
+      <%= form.label :a2503, '2503' %><br>
       <%= form.check_box :a2503 %>
     </p>
 
     <p>
-      <%= form.label :a2504 %><br>
+      <%= form.label :a2504, '2504' %><br>
       <%= form.check_box :a2504 %>
     </p>
 

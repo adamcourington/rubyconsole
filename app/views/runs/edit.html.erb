@@ -1,169 +1,169 @@
 <h1>Edit Run</h1>
 
 <%= form_with(model: @run, local: true) do |form| %>
-    <p>
-      <%= form.label :run_number %><br>
-      <%= form.text_field :run_number %>
-    </p>
-   
-    <p>
-      <%= form.label :date %><br>
-      <%= form.text_field :date %>
-    </p>
+  <p>
+  <%= form.label :run_number, 'Run Number' %><br>
+  <%= form.text_field :run_number %>
+</p>
 
-    <p>
-      <%= form.label :station %><br>
-      <%= form.select :station, ['', '1', '2', 'Mutual Aid']%>
-    </p>
+<p>
+  <%= form.label :date %><br>
+  <%= form.text_field :date %>
+</p>
 
-    <p>
-      <%= form.label :time_of_call %><br>
-      <%= form.text_field :time_of_call %>
-    </p>
+<p>
+  <%= form.label :station %><br>
+  <%= form.select :station, ['', '1', '2', 'Mutual Aid']%>
+</p>
 
-    <p>
-      <%= form.label :onscene %><br>
-      <%= form.text_field :onscene %>
-    </p>
+<p>
+  <%= form.label :time_of_call, 'Time of Call' %><br>
+  <%= form.text_field :time_of_call %>
+</p>
 
-    <p>
-      <%= form.label :inservice %><br>
-      <%= form.text_field :inservice %>
-    </p>
+<p>
+  <%= form.label :onscene, 'On Scene' %><br>
+  <%= form.text_field :onscene %>
+</p>
 
-    <p>
-      <%= form.label :number %><br>
-      <%= form.text_field :number %>
-    </p>
+<p>
+  <%= form.label :inservice %><br>
+  <%= form.text_field :inservice %>
+</p>
 
-    <p>
-      <%= form.label :street1 %><br>
-      <%= form.text_field :street1 %>
-    </p>
+<p>
+  <%= form.label :number %><br>
+  <%= form.text_field :number %>
+</p>
 
-    <p>
-      <%= form.label :street2 %><br>
-      <%= form.text_field :street2 %>
-    </p>
+<p>
+  <%= form.label :street1, 'Street' %><br>
+  <%= form.text_field :street1 %>
+</p>
 
-    <p>
-      <%= form.label :category1 %><br>
-      <%= form.text_field :category1 %>
-    </p>
+<p>
+  <%= form.label :street2, 'Cross Street' %><br>
+  <%= form.text_field :street2 %>
+</p>
 
-    <p>
-      <%= form.label :category2 %><br>
-      <%= form.text_field :category2 %>
-    </p>
+<p>
+  <%= form.label :category1, 'Primary Nature of Call' %><br>
+  <%= form.text_field :category1 %>
+</p>
 
-    <p>
-      <%= form.label :info %><br>
-      <%= form.text_field :info %>
-    </p>
+<p>
+  <%= form.label :category2, 'Secondary Nature of Call' %><br>
+  <%= form.text_field :category2 %>
+</p>
 
-    <p>
-      <%= form.label :shift %><br>
-      <%= form.select :shift, ['', 'A', 'B', 'C']%>
-    </p>
+<p>
+  <%= form.label :info, 'Additional Info' %><br>
+  <%= form.text_field :info %>
+</p>
 
-    <p>
-      <%= form.label :name %><br>
-      <%= form.select :name, ['', 'Allred', 
-                                  'Akerman',
-                                  'Armstrong',
-                                  'Blount',
-                                  'Borrello',
-                                  'Bush',
-                                  'Clayton',
-                                  'Courington',
-                                  'J. Davis',
-                                  'P. Davis',
-                                  'Doyle',
-                                  'Dunsker',
-                                  'Ford',
-                                  'Green',
-                                  'Hannah',
-                                  'Harris',
-                                  'Holcombe',
-                                  'Howard',
-                                  'Jenkins',
-                                  'Johnson',
-                                  'Kearns',
-                                  'Mizell',
-                                  'Moman',
-                                  'Norsworthy',
-                                  'Parsons',
-                                  'Paterno',
-                                  'Roberson',
-                                  'Rossetti',
-                                  'Shell',
-                                  'Sims',
-                                  'J. Smith',
-                                  'Smotherman',
-                                  'Templeton',
-                                  'Tipton',
-                                  'Velez-Ruiz',
-                                  'C. Williams',
-                                  'Other']%>
-    </p>
+<p>
+  <%= form.label :shift %><br>
+  <%= form.select :shift, ['', 'A', 'B', 'C']%>
+</p>
 
-    <p>
-      <%= form.label :a2591 %><br>
-      <%= form.check_box :a2591 %>
-    </p>
+<p>
+  <%= form.label :name %><br>
+  <%= form.select :name, ['', 'Allred', 
+                              'Akerman',
+                              'Armstrong',
+                              'Blount',
+                              'Borrello',
+                              'Bush',
+                              'Clayton',
+                              'Courington',
+                              'J. Davis',
+                              'P. Davis',
+                              'Doyle',
+                              'Dunsker',
+                              'Ford',
+                              'Green',
+                              'Hannah',
+                              'Harris',
+                              'Holcombe',
+                              'Howard',
+                              'Jenkins',
+                              'Johnson',
+                              'Kearns',
+                              'Mizell',
+                              'Moman',
+                              'Norsworthy',
+                              'Parsons',
+                              'Paterno',
+                              'Roberson',
+                              'Rossetti',
+                              'Shell',
+                              'Sims',
+                              'J. Smith',
+                              'Smotherman',
+                              'Templeton',
+                              'Tipton',
+                              'Velez-Ruiz',
+                              'C. Williams',
+                              'Other']%>
+</p>
 
-    <p>
-      <%= form.label :a2592 %><br>
-      <%= form.check_box :a2592 %>
-    </p>
+<p>
+  <%= form.label :a2591, '2591' %><br>
+  <%= form.check_box :a2591 %>
+</p>
 
-    <p>
-      <%= form.label :a2551 %><br>
-      <%= form.check_box :a2551 %>
-    </p>
+<p>
+  <%= form.label :a2592, '2592' %><br>
+  <%= form.check_box :a2592 %>
+</p>
 
-    <p>
-      <%= form.label :a2552 %><br>
-      <%= form.check_box :a2552 %>
-    </p>
+<p>
+  <%= form.label :a2551, '2551' %><br>
+  <%= form.check_box :a2551 %>
+</p>
 
-    <p>
-      <%= form.label :a2553 %><br>
-      <%= form.check_box :a2553 %>
-    </p>
+<p>
+  <%= form.label :a2552, '2552' %><br>
+  <%= form.check_box :a2552 %>
+</p>
 
-    <p>
-      <%= form.label :a2571 %><br>
-      <%= form.check_box :a2571 %>
-    </p>
+<p>
+  <%= form.label :a2553, '2553' %><br>
+  <%= form.check_box :a2553 %>
+</p>
 
-    <p>
-      <%= form.label :a2572 %><br>
-      <%= form.check_box :a2572 %>
-    </p>
+<p>
+  <%= form.label :a2571, '2571' %><br>
+  <%= form.check_box :a2571 %>
+</p>
 
-    <p>
-      <%= form.label :a2501 %><br>
-      <%= form.check_box :a2501 %>
-    </p>
+<p>
+  <%= form.label :a2572, '2572' %><br>
+  <%= form.check_box :a2572 %>
+</p>
 
-    <p>
-      <%= form.label :a2502 %><br>
-      <%= form.check_box :a2502 %>
-    </p>
+<p>
+  <%= form.label :a2501, '2501' %><br>
+  <%= form.check_box :a2501 %>
+</p>
 
-    <p>
-      <%= form.label :a2503 %><br>
-      <%= form.check_box :a2503 %>
-    </p>
+<p>
+  <%= form.label :a2502, '2502' %><br>
+  <%= form.check_box :a2502 %>
+</p>
 
-    <p>
-      <%= form.label :a2504 %><br>
-      <%= form.check_box :a2504 %>
-    </p>
+<p>
+  <%= form.label :a2503, '2503' %><br>
+  <%= form.check_box :a2503 %>
+</p>
 
-    <p>
-      <%= form.submit %>
-    </p>
+<p>
+  <%= form.label :a2504, '2504' %><br>
+  <%= form.check_box :a2504 %>
+</p>
+
+<p>
+  <%= form.submit %>
+</p>
   <% end %>
   <%= link_to 'Back', runs_path, class: "btn btn-sm btn-outline-secondary" %>
